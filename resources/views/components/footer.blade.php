@@ -34,11 +34,11 @@
             <div>
                 <h4 class="font-semibold mb-4">Connect</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:opacity-80 transition-opacity">WhatsApp us</a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity">Email address</a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity">Visit us</a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity">Call us now</a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity">Find us</a></li>
+                    <li><a href="https://wa.me/6281343339810" class="hover:opacity-80 transition-opacity">WhatsApp us</a></li>
+                    <li><a href="karmina.savsav@gmail.com" class="hover:opacity-80 transition-opacity">Email address</a></li>
+                    <li><a href="/booking" class="hover:opacity-80 transition-opacity">Visit us</a></li>
+                    <li><a href="/booking" class="hover:opacity-80 transition-opacity">Call us now</a></li>
+                    <li><a href="/booking" class="hover:opacity-80 transition-opacity">Find us</a></li>
                 </ul>
             </div>
 

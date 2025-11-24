@@ -61,12 +61,16 @@
                         Connect instantly with our team to secure your reservation and answer any questions
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors">
-                            Book
-                        </button>
-                        <button class="px-8 py-3.5 bg-white text-[#8B734C] border-2 border-[#8B734C] rounded-lg font-semibold hover:bg-[#FDFBF7] transition-colors">
-                            Call
-                        </button>
+<a href="https://wa.me/6281343339810" 
+   class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors inline-block">
+    Book
+</a>
+
+<a href="https://wa.me/6281343339810" 
+   class="px-8 py-3.5 bg-white text-[#8B734C] border-2 border-[#8B734C] rounded-lg font-semibold hover:bg-[#FDFBF7] transition-colors inline-block">
+    Call
+</a>
+
                     </div>
                 </div>
 
@@ -96,7 +100,7 @@
                         Discover our resort's beautiful moments, stunning views, and guest experiences on Instagram
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://www.instagram.com/vieraresort" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
+                        <a href="https://www.instagram.com/viera_resortngurbloat?igsh=eGdqeXQwdWFsbjI3" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
                             Follow Resort
                         </a>
                     </div>
@@ -128,7 +132,7 @@
                         Stay updated with our latest menu items, special offers, and dining experiences at Viera Cafe
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://www.instagram.com/vieracafe" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
+                        <a href="https://www.instagram.com/viera.caffe_and_resto?igsh=bndrdWhrMmFyNjVs" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
                             Follow Cafe
                         </a>
                     </div>
@@ -288,8 +292,8 @@
                     <p class="text-[#706F6C] mb-3 text-sm">
                         Send us your inquiry and we'll respond promptly
                     </p>
-                    <a href="mailto:info@vieraresort.com" class="text-[#8B734C] underline hover:text-[#7A6340] transition-colors">
-                        info@vieraresort.com
+                    <a href="karmina.savsav@gmail.com" class="text-[#8B734C] underline hover:text-[#7A6340] transition-colors">
+                        karmina.savsav@gmail.com
                     </a>
                 </div>
 
@@ -304,8 +308,8 @@
                     <p class="text-[#706F6C] mb-3 text-sm">
                         Call us directly to discuss your reservation needs
                     </p>
-                    <a href="tel:+6281234567890" class="text-[#8B734C] underline hover:text-[#7A6340] transition-colors">
-                        +62 812 3456 7890
+                    <a href="https://wa.me/6281343339810" class="text-[#8B734C] underline hover:text-[#7A6340] transition-colors">
+                        081343339810
                     </a>
                 </div>
 
