@@ -51,6 +51,9 @@
                 <p class="text-lg lg:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
                     Where the sea meets your table and every meal tastes like home
                 </p>
+                <p class="text-lg lg:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Open everyday 08.00 am - 10.00 pm!!!
+                </p>
                 <a href="/booking" class="inline-block px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-all transform hover:scale-105 shadow-lg">
                     Reserve
                 </a>
@@ -459,6 +462,62 @@
 
     {{-- Gallery Section --}}
     <section class="bg-[#FDFBF7] py-20 lg:py-32">
+        <style>
+            .cafe-gallery-item {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+            .cafe-gallery-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .cafe-gallery-container {
+                position: relative;
+            }
+            .cafe-gallery-grid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+            #cafe-gallery-prev,
+            #cafe-gallery-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 20;
+            }
+            #cafe-gallery-prev {
+                left: 1rem;
+            }
+            #cafe-gallery-next {
+                right: 1rem;
+            }
+            @media (max-width: 768px) {
+                .cafe-gallery-item {
+                    width: 150px;
+                    height: 150px;
+                }
+                #cafe-gallery-prev {
+                    left: 0.5rem;
+                }
+                #cafe-gallery-next {
+                    right: 0.5rem;
+                }
+            }
+            @media (min-width: 1024px) {
+                .cafe-gallery-item {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        </style>
         <div class="container mx-auto px-4 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 animate-on-scroll">
@@ -471,29 +530,29 @@
                 </div>
 
                 {{-- Gallery Carousel --}}
-                <div class="relative">
+                <div class="cafe-gallery-container relative">
                     {{-- Carousel Container --}}
-                    <div class="relative overflow-hidden rounded-2xl">
+                    <div class="relative overflow-hidden rounded-2xl max-w-7xl mx-auto">
                         <div class="flex transition-transform duration-500 ease-in-out" id="cafe-gallery-carousel" style="transform: translateX(0%);">
                             {{-- Slide 1 --}}
                             <div class="min-w-full flex-shrink-0">
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="cafe-gallery-grid">
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe1.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe1.png') }}" alt="Cafe Gallery 1" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe2.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe2.png') }}" alt="Cafe Gallery 2" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe3.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe3.png') }}" alt="Cafe Gallery 3" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -501,23 +560,23 @@
 
                             {{-- Slide 2 --}}
                             <div class="min-w-full flex-shrink-0">
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="cafe-gallery-grid">
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe4.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe4.png') }}" alt="Cafe Gallery 4" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe5.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe5.png') }}" alt="Cafe Gallery 5" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe6.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe6.png') }}" alt="Cafe Gallery 6" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -525,23 +584,47 @@
 
                             {{-- Slide 3 --}}
                             <div class="min-w-full flex-shrink-0">
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="cafe-gallery-grid">
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe7.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe7.png') }}" alt="Cafe Gallery 7" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe8.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe8.png') }}" alt="Cafe Gallery 8" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Cafe Gallery 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe9.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe9.png') }}" alt="Cafe Gallery 9" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Slide 4 --}}
+                            <div class="min-w-full flex-shrink-0">
+                                <div class="cafe-gallery-grid">
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe10.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe10.png') }}" alt="Cafe Gallery 10" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe1.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe1.png') }}" alt="Cafe Gallery 11" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cafe-gallery-item group rounded-xl">
+                                        <a href="{{ asset('GaleriCafe2.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('GaleriCafe2.png') }}" alt="Cafe Gallery 12" class="cafe-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -549,12 +632,12 @@
                         </div>
 
                         {{-- Navigation Arrows --}}
-                        <button id="cafe-gallery-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 z-10">
+                        <button id="cafe-gallery-prev" class="w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
                             <svg class="w-6 h-6 text-[#1B1B18]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
                         </button>
-                        <button id="cafe-gallery-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 z-10">
+                        <button id="cafe-gallery-next" class="w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
                             <svg class="w-6 h-6 text-[#1B1B18]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
@@ -566,6 +649,7 @@
                         <button class="cafe-gallery-dot w-2.5 h-2.5 rounded-full bg-[#8B734C] transition-all active" data-index="0"></button>
                         <button class="cafe-gallery-dot w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-all" data-index="1"></button>
                         <button class="cafe-gallery-dot w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-all" data-index="2"></button>
+                        <button class="cafe-gallery-dot w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-all" data-index="3"></button>
                     </div>
                 </div>
             </div>

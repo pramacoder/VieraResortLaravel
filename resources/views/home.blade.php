@@ -163,7 +163,7 @@
                             <p class="text-sm opacity-90">Fresh food, locally prepared, and served with a smile</p>
                         </div>
                     </div>
-                    <a href="#cafe" class="text-[#8B734C] font-medium hover:text-[#7A6340] transition-colors flex items-center gap-2 group-hover:gap-4 transition-all">
+                    <a href="/cafe" class="text-[#8B734C] font-medium hover:text-[#7A6340] transition-colors flex items-center gap-2 group-hover:gap-4 transition-all">
                         Read more
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -370,7 +370,7 @@
             <div class="max-w-4xl mx-auto">
                 {{-- Header --}}
                 <div class="mb-8 animate-on-scroll">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-2">VieraResort</h2>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-2">VieraResort on Gmaps</h2>
                     <p class="text-sm text-gray-400 mb-4">
                         8JJM+MHF, Ngurbloat Beach, Tanjung, Ngilngof, Manyeuw, Southeast Maluku Regency, Maluku, Indonesia
                     </p>
@@ -400,30 +400,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <button class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-sm font-medium transition-colors">
+                    <a href="https://www.google.com/maps/place/VieraResort/@-5.6683192,132.6313587,17z/data=!3m1!4b1!4m6!3m5!1s0x2d300500091e7ce3:0x7dd44b1682f7da09!8m2!3d-5.6683192!4d132.6339336!16s%2Fg%2F11yn34hcgn?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-sm font-medium transition-colors inline-block">
                         Tulis ulasan
-                    </button>
+                    </a>
                 </div>
-
-                {{-- Sort Options --}}
-                <div class="mb-6 animate-on-scroll-delay-1">
-                    <p class="text-sm text-gray-400 mb-3">Urutkan menurut</p>
-                    <div class="flex flex-wrap gap-2">
-                        <button class="sort-btn px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium active" data-sort="relevant">
-                            Paling relevan
-                        </button>
-                        <button class="sort-btn px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-sm font-medium" data-sort="newest">
-                            Terbaru
-                        </button>
-                        <button class="sort-btn px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-sm font-medium" data-sort="highest">
-                            Rating tertinggi
-                        </button>
-                        <button class="sort-btn px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-sm font-medium" data-sort="lowest">
-                            Rating terendah
-                        </button>
-                    </div>
-                </div>
-
                 {{-- Reviews List --}}
                 <div class="space-y-6">
                     {{-- Review 1 --}}
@@ -436,7 +416,6 @@
                                 <div class="flex items-center gap-2 mb-1">
                                     <h3 class="font-semibold text-white">Liesye TeSa</h3>
                                 </div>
-                                <p class="text-xs text-gray-400 mb-2">1 ulasan - 2 foto</p>
                                 <div class="flex items-center gap-3">
                                     <div class="flex gap-0.5">
                                         <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -455,27 +434,12 @@
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-xs text-gray-400">3 minggu lalu</span>
-                                    <span class="px-2 py-0.5 bg-gray-700 text-white text-xs rounded">BARU</span>
                                 </div>
                             </div>
-                            <button class="text-gray-400 hover:text-white">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-                                </svg>
-                            </button>
                         </div>
                         <p class="text-white leading-relaxed mb-3">
                             Mantuuuulll poollll suasana tenang, sunset bgussnya kyaa ngajak ke surgaaa 😭😍 penginpn estetik pelayannya buat nyamn juga 🥰🥰🥰🥰 best viera resort 👍
                         </p>
-                        <div class="flex items-center justify-between text-sm text-gray-400">
-                            <span>Arahkan kursor untuk memberikan reaksi</span>
-                            <button class="hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                                </svg>
-                            </button>
-                        </div>
                     </div>
 
                     {{-- Review 2 --}}
@@ -488,7 +452,6 @@
                                 <div class="flex items-center gap-2 mb-1">
                                     <h3 class="font-semibold text-white">Mario Tethool</h3>
                                 </div>
-                                <p class="text-xs text-gray-400 mb-2">3 ulasan - 1 foto</p>
                                 <div class="flex items-center gap-3">
                                     <div class="flex gap-0.5">
                                         <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -507,24 +470,12 @@
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-xs text-gray-400">4 hari lalu</span>
-                                    <span class="px-2 py-0.5 bg-gray-700 text-white text-xs rounded">BARU</span>
                                 </div>
                             </div>
-                            <button class="text-gray-400 hover:text-white">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <div class="flex items-center justify-between text-sm text-gray-400">
-                            <span>Arahkan kursor untuk memberikan reaksi</span>
-                            <button class="hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                                </svg>
-                            </button>
-                        </div>
+                        <p class="text-white leading-relaxed mb-3">
+                            Pelayanan sangat baik, fasilitas lengkap dan nyaman. Cocok untuk liburan bersama keluarga. Recommended!
+                        </p>
                     </div>
 
                     {{-- Review 3 --}}
@@ -537,7 +488,6 @@
                                 <div class="flex items-center gap-2 mb-1">
                                     <h3 class="font-semibold text-white">Karmina Savsavubun06</h3>
                                 </div>
-                                <p class="text-xs text-gray-400 mb-2">1 ulasan - 18 foto</p>
                                 <div class="flex items-center gap-3">
                                     <div class="flex gap-0.5">
                                         <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -556,24 +506,12 @@
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-xs text-gray-400">3 minggu lalu</span>
-                                    <span class="px-2 py-0.5 bg-gray-700 text-white text-xs rounded">BARU</span>
                                 </div>
                             </div>
-                            <button class="text-gray-400 hover:text-white">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <div class="flex items-center justify-between text-sm text-gray-400">
-                            <span>Arahkan kursor untuk memberikan reaksi</span>
-                            <button class="hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                                </svg>
-                            </button>
-                        </div>
+                        <p class="text-white leading-relaxed mb-3">
+                            Tempat yang sangat indah dengan pemandangan yang menakjubkan. Kolam renangnya luas dan bersih. Pasti akan kembali lagi!
+                        </p>
                     </div>
 
                     {{-- Review 4 --}}
@@ -586,7 +524,6 @@
                                 <div class="flex items-center gap-2 mb-1">
                                     <h3 class="font-semibold text-white">Clemenia Maria</h3>
                                 </div>
-                                <p class="text-xs text-gray-400 mb-2">1 foto</p>
                                 <div class="flex items-center gap-3">
                                     <div class="flex gap-0.5">
                                         <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -605,24 +542,12 @@
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                                         </svg>
                                     </div>
-                                    <span class="text-xs text-gray-400">3 minggu lalu</span>
-                                    <span class="px-2 py-0.5 bg-gray-700 text-white text-xs rounded">BARU</span>
                                 </div>
                             </div>
-                            <button class="text-gray-400 hover:text-white">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <div class="flex items-center justify-between text-sm text-gray-400">
-                            <span>Arahkan kursor untuk memberikan reaksi</span>
-                            <button class="hover:text-white transition-colors">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                                </svg>
-                            </button>
-                        </div>
+                        <p class="text-white leading-relaxed mb-3">
+                            Suasana sangat tenang dan nyaman. Kamar bersih dan rapi. Staff sangat ramah dan membantu. Pengalaman menginap yang menyenangkan!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -803,3 +728,4 @@
         });
     </script>
 @endsection
+

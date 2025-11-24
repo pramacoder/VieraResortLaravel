@@ -80,6 +80,70 @@
         </div>
     </section>
 
+    {{-- Instagram Resort Section --}}
+    <section class="bg-white py-12 sm:py-16 lg:py-20 xl:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row-reverse gap-8 sm:gap-12 lg:gap-16 items-center">
+                {{-- Left Section: Text Content --}}
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram" class="w-8 h-8">
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
+                            Follow us on Instagram
+                        </h2>
+                    </div>
+                    <p class="text-base sm:text-lg lg:text-xl text-[#706F6C] mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Discover our resort's beautiful moments, stunning views, and guest experiences on Instagram
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://www.instagram.com/vieraresort" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
+                            Follow Resort
+                        </a>
+                    </div>
+                </div>
+
+                {{-- Right Section: Image --}}
+                <div class="w-full lg:w-1/2">
+                    <div class="rounded-lg overflow-hidden">
+                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram Viera Resort" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Instagram Cafe Section --}}
+    <section class="bg-[#FDFBF7] py-12 sm:py-16 lg:py-20 xl:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center">
+                {{-- Left Section: Text Content --}}
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram" class="w-8 h-8">
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
+                            Follow our Cafe
+                        </h2>
+                    </div>
+                    <p class="text-base sm:text-lg lg:text-xl text-[#706F6C] mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Stay updated with our latest menu items, special offers, and dining experiences at Viera Cafe
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://www.instagram.com/vieracafe" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
+                            Follow Cafe
+                        </a>
+                    </div>
+                </div>
+
+                {{-- Right Section: Image --}}
+                <div class="w-full lg:w-1/2">
+                    <div class="rounded-lg overflow-hidden">
+                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram Viera Cafe" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- FAQ Section --}}
     <section class="bg-[#8B734C] py-16 lg:py-24">
         <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
