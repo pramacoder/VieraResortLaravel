@@ -2,39 +2,7 @@
 
 @section('content')
     {{-- Navigation --}}
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#FDFBF7]/95 backdrop-blur-sm border-b border-[#E8E6E0] transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex items-center justify-between h-16 lg:h-20">
-                <a href="/" class="text-2xl font-serif font-semibold text-[#1B1B18] transition-opacity hover:opacity-80" style="font-family: 'Cormorant Garamond', serif;">
-                    Logo
-                </a>
-                <div class="hidden lg:flex items-center gap-8">
-                    <a href="/" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Home</a>
-                    <a href="/resort" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Resort</a>
-                    <a href="/cafe" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Cafe & Resto</a>
-                    <a href="/booking" class="text-sm font-medium text-[#8B734C] transition-colors font-semibold">Book</a>
-                    <a href="/booking" class="px-6 py-2.5 bg-[#8B734C] text-white rounded-lg font-medium hover:bg-[#7A6340] transition-all transform hover:scale-105">
-                        Reserve
-                    </a>
-                </div>
-                <button class="lg:hidden text-[#1B1B18]" id="mobile-menu-btn">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        {{-- Mobile Menu --}}
-        <div class="lg:hidden hidden bg-[#FDFBF7] border-t border-[#E8E6E0]" id="mobile-menu">
-            <div class="container mx-auto px-4 py-4 space-y-3">
-                <a href="/" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Home</a>
-                <a href="/resort" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Resort</a>
-                <a href="/cafe" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Cafe & Resto</a>
-                <a href="/booking" class="block text-sm font-medium text-[#8B734C] font-semibold">Book</a>
-                <a href="/booking" class="block px-6 py-2.5 bg-[#8B734C] text-white rounded-lg font-medium text-center">Reserve</a>
-            </div>
-        </div>
-    </nav>
+    <x-navbar />
 
     {{-- Hero Section --}}
     <section class="bg-[#FDFBF7] py-16 lg:py-24 pt-32">
@@ -297,7 +265,7 @@
                         Visit us or find directions to our resort office
                     </p>
                     <a href="https://www.google.com/maps/place/VieraResort/@-5.6683192,132.6339336,15z/data=!4m6!3m5!1s0x2d300500091e7ce3:0x7dd44b1682f7da09!8m2!3d-5.6683192!4d132.6339336!16s%2Fg%2F11c48_2jpw?entry=ttu&g_ep=EgoyMDI1MTEyMi4wIKXMDSoASAFQAw%3D%3D" class="text-[#8B734C] underline">
-                        Ngurbloat, Bali, Indonesia
+                        Ngurbloat, Kei Kecil, Indonesia
                     </a>
                 </div>
             </div>
