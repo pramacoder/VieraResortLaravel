@@ -48,100 +48,71 @@
         </div>
     </section>
 
-    {{-- WhatsApp Section --}}
+    {{-- Contact & Maps Section --}}
     <section class="bg-[#FDFBF7] py-12 sm:py-16 lg:py-20 xl:py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center">
-                {{-- Left Section: Text Content --}}
+            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-start">
+                {{-- Left Section: Contact (WhatsApp & Instagram) --}}
                 <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#1B1B18] mb-6" style="font-family: 'Cormorant Garamond', serif;">
-                        Message us on WhatsApp
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#1B1B18] mb-8" style="font-family: 'Cormorant Garamond', serif;">
+                        Get in Touch
                     </h2>
-                    <p class="text-base sm:text-lg lg:text-xl text-[#706F6C] mb-8 max-w-2xl mx-auto lg:mx-0">
-                        Connect instantly with our team to secure your reservation and answer any questions
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-<a href="https://wa.me/6281343339810" 
-   class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors inline-block">
-    Book
-</a>
+                    
+                    {{-- WhatsApp Section --}}
+                    <div class="mb-8">
+                        <h3 class="text-2xl sm:text-3xl font-serif font-semibold text-[#1B1B18] mb-4" style="font-family: 'Cormorant Garamond', serif;">
+                            Message us on WhatsApp
+                        </h3>
+                        <p class="text-base sm:text-lg text-[#706F6C] mb-6 max-w-2xl mx-auto lg:mx-0">
+                            Connect instantly with our team to secure your reservation and answer any questions
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="https://wa.me/6281343339810" 
+                               class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors inline-block text-center">
+                                Book
+                            </a>
+                            <a href="https://wa.me/6281343339810" 
+                               class="px-8 py-3.5 bg-white text-[#8B734C] border-2 border-[#8B734C] rounded-lg font-semibold hover:bg-[#FDFBF7] transition-colors inline-block text-center">
+                                Call
+                            </a>
+                        </div>
+                    </div>
 
-<a href="https://wa.me/6281343339810" 
-   class="px-8 py-3.5 bg-white text-[#8B734C] border-2 border-[#8B734C] rounded-lg font-semibold hover:bg-[#FDFBF7] transition-colors inline-block">
-    Call
-</a>
-
+                    {{-- Instagram Section --}}
+                    <div>
+                        <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                            <img src="{{ asset('instagramIcon.png') }}" alt="Instagram" class="w-8 h-8">
+                            <h3 class="text-2xl sm:text-3xl font-serif font-semibold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
+                                Follow us on Instagram
+                            </h3>
+                        </div>
+                        <p class="text-base sm:text-lg text-[#706F6C] mb-6 max-w-2xl mx-auto lg:mx-0">
+                            Discover our resort's beautiful moments and stay updated with our latest cafe offerings
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="https://www.instagram.com/viera_resortngurbloat?igsh=eGdqeXQwdWFsbjI3" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
+                                Follow Resort
+                            </a>
+                            <a href="https://www.instagram.com/viera.caffe_and_resto?igsh=bndrdWhrMmFyNjVs" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-white text-[#8B734C] border-2 border-[#8B734C] rounded-lg font-semibold hover:bg-[#FDFBF7] transition-colors text-center">
+                                Follow Cafe
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                {{-- Right Section: Image --}}
+                {{-- Right Section: Maps --}}
                 <div class="w-full lg:w-1/2">
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="{{ asset('whatsapp_web.jpg') }}" alt="WhatsApp Viera Resort Ngurbloat" class="w-full h-auto object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Instagram Resort Section --}}
-    <section class="bg-white py-12 sm:py-16 lg:py-20 xl:py-24">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row-reverse gap-8 sm:gap-12 lg:gap-16 items-center">
-                {{-- Left Section: Text Content --}}
-                <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
-                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram" class="w-8 h-8">
-                        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
-                            Follow us on Instagram
-                        </h2>
-                    </div>
-                    <p class="text-base sm:text-lg lg:text-xl text-[#706F6C] mb-8 max-w-2xl mx-auto lg:mx-0">
-                        Discover our resort's beautiful moments, stunning views, and guest experiences on Instagram
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://www.instagram.com/viera_resortngurbloat?igsh=eGdqeXQwdWFsbjI3" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
-                            Follow Resort
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Right Section: Image --}}
-                <div class="w-full lg:w-1/2">
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram Viera Resort" class="w-full h-auto object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Instagram Cafe Section --}}
-    <section class="bg-[#FDFBF7] py-12 sm:py-16 lg:py-20 xl:py-24">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center">
-                {{-- Left Section: Text Content --}}
-                <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
-                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram" class="w-8 h-8">
-                        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
-                            Follow our Cafe
-                        </h2>
-                    </div>
-                    <p class="text-base sm:text-lg lg:text-xl text-[#706F6C] mb-8 max-w-2xl mx-auto lg:mx-0">
-                        Stay updated with our latest menu items, special offers, and dining experiences at Viera Cafe
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://www.instagram.com/viera.caffe_and_resto?igsh=bndrdWhrMmFyNjVs" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors text-center">
-                            Follow Cafe
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Right Section: Image --}}
-                <div class="w-full lg:w-1/2">
-                    <div class="rounded-lg overflow-hidden">
-                        <img src="{{ asset('instagramIcon.png') }}" alt="Instagram Viera Cafe" class="w-full h-auto object-cover">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.309445902038!2d132.6339336!3d-5.6683192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d300500091e7ce3%3A0x7dd44b1682f7da09!2sVieraResort!5e0!3m2!1sid!2sid!4v1764076058941!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="500" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-[400px] lg:h-[500px]">
+                        </iframe>
                     </div>
                 </div>
             </div>

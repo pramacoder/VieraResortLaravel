@@ -123,63 +123,469 @@
         </div>
     </section>
 
-    {{-- Three meals, one kitchen --}}
-    <section class="bg-[#FDFBF7] py-20 lg:py-32">
+    {{-- Menu Section --}}
+    <section id="menu" class="bg-[#FDFBF7] py-20 lg:py-32">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-4xl lg:text-6xl font-serif font-bold text-[#1B1B18] mb-4" style="font-family: 'Cormorant Garamond', serif;">
-                    Three meals, one kitchen
+                    Viera Café & Restaurant
                 </h2>
                 <p class="text-lg text-[#706F6C] max-w-2xl mx-auto">
-                    Breakfast starts early, lunch runs through afternoon, dinner when the light goes gold
+                    Beverages & Restaurant
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg animate-on-scroll-delay-1 transform hover:scale-105 transition-transform">
-                    <div class="w-16 h-16 bg-[#8B734C] rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-                        </svg>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 max-w-7xl mx-auto">
+                {{-- Card 1: Food - Rice & Main Dishes, Chicken --}}
+                <div class="bg-white rounded-2xl shadow-lg p-8 lg:p-10 animate-on-scroll-delay-1">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-12 h-12 bg-[#8B734C] rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">Food</h3>
                     </div>
-                    <h3 class="text-2xl font-semibold text-[#1B1B18] mb-3">Coffee that means something</h3>
-                    <p class="text-[#706F6C] mb-6">Roasted beans ground fresh each morning, served hot or cold</p>
-                    <a href="#menu" class="text-[#8B734C] font-semibold hover:text-[#7A6340] transition-colors flex items-center gap-2">
-                        Explore
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg animate-on-scroll-delay-2 transform hover:scale-105 transition-transform">
-                    <div class="w-16 h-16 bg-[#8B734C] rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                        </svg>
+                    
+                    <div class="space-y-6">
+                        {{-- Rice & Main Dishes --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Rice & Main Dishes</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Rice</span>
+                                    <span class="font-semibold text-[#8B734C]">10K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Rice (Fried Chicken + Veg)</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Viera Fried Rice</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Rice Club</span>
+                                    <span class="font-semibold text-[#8B734C]">20K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Rice Egg</span>
+                                    <span class="font-semibold text-[#8B734C]">20K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Potato</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Chicken Porridge</span>
+                                    <span class="font-semibold text-[#8B734C]">20K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Instant Noodle Fried Rice + Egg</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Wet Noodle Fried Rice (S)</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Chicken Egg Vermicelli (L)</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Chicken Dishes --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Chicken</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Butter Fried Chicken</span>
+                                    <span class="font-semibold text-[#8B734C]">50K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Crispy Fried Chicken Fillet</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Chicken Katsu</span>
+                                    <span class="font-semibold text-[#8B734C]">50K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Chicken Soup</span>
+                                    <span class="font-semibold text-[#8B734C]">60K-120K</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-semibold text-[#1B1B18] mb-3">Vegetables done right</h3>
-                    <p class="text-[#706F6C] mb-6">No meat required to eat well here, we make sure of that</p>
-                    <a href="#menu" class="text-[#8B734C] font-semibold hover:text-[#7A6340] transition-colors flex items-center gap-2">
-                        Explore
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg animate-on-scroll-delay-3 transform hover:scale-105 transition-transform">
-                    <div class="w-16 h-16 bg-[#8B734C] rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                        </svg>
+
+                {{-- Card 2: Food - Seafood, Vegetables, Other Dishes, Fried Food, Stew --}}
+                <div class="bg-white rounded-2xl shadow-lg p-8 lg:p-10 animate-on-scroll-delay-2">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-12 h-12 bg-[#8B734C] rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">Food</h3>
                     </div>
-                    <h3 class="text-2xl font-semibold text-[#1B1B18] mb-3">Drinks beyond coffee</h3>
-                    <p class="text-[#706F6C] mb-6">Fresh juices, local teas, and spirits that pair with the meal</p>
-                    <a href="#menu" class="text-[#8B734C] font-semibold hover:text-[#7A6340] transition-colors flex items-center gap-2">
-                        Explore
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
+                    
+                    <div class="space-y-6">
+                        {{-- Seafood --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Seafood</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fish Soup</span>
+                                    <span class="font-semibold text-[#8B734C]">85K-120K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Grilled Fish</span>
+                                    <span class="font-semibold text-[#8B734C]">Call</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Fish (Piece)</span>
+                                    <span class="font-semibold text-[#8B734C]">10K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Crispy Fried Fish (Boneless)</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Sea Shells / Clam</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Crispy Fried Cuttlefish</span>
+                                    <span class="font-semibold text-[#8B734C]">45K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Viera Fried Cuttlefish</span>
+                                    <span class="font-semibold text-[#8B734C]">45K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Soy Sauce Cuttlefish</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Stir Fry Crab (Sautee)</span>
+                                    <span class="font-semibold text-[#8B734C]">70K-200K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Lobster</span>
+                                    <span class="font-semibold text-[#8B734C]">100K-500K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Crunchy Shrimp Sweet & Sour</span>
+                                    <span class="font-semibold text-[#8B734C]">45K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Vegetables --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Vegetables</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Traditional Vegetable</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Seaweed</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Cah Spinach Mustard</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Papaya Flower + Mustard</span>
+                                    <span class="font-semibold text-[#8B734C]">26K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Papaya Flower</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Papaya Leaf</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Capcay</span>
+                                    <span class="font-semibold text-[#8B734C]">50K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fruit Vegetable Salad</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Other Dishes --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Other Dishes</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Egg</span>
+                                    <span class="font-semibold text-[#8B734C]">10K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Cassava Roast</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Cassava Roasted</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Papeda</span>
+                                    <span class="font-semibold text-[#8B734C]">25K/50K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Papeda Fish Soup (5 Person)</span>
+                                    <span class="font-semibold text-[#8B734C]">170K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Viera Soup (Fish Leader)</span>
+                                    <span class="font-semibold text-[#8B734C]">60K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Fried Food --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Fried Food</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Cassava Banana</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Chocolate Cheese Banana</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Crunchy Banana</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Cassava Crunchy Banana</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fried Sweet Potato</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Stew --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Stew</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Banana</span>
+                                    <span class="font-semibold text-[#8B734C]">25K-50K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Sweet Potato</span>
+                                    <span class="font-semibold text-[#8B734C]">25K-50K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                {{-- Card 3: Beverages - Beer, Drinks --}}
+                <div class="bg-white rounded-2xl shadow-lg p-8 lg:p-10 animate-on-scroll-delay-3">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-12 h-12 bg-[#8B734C] rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">Beverages</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        {{-- Beer --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Beer</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Bottled Beer (L)</span>
+                                    <span class="font-semibold text-[#8B734C]">76K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Bottled Beer (S)</span>
+                                    <span class="font-semibold text-[#8B734C]">60K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Jumbo Canned Beer (L)</span>
+                                    <span class="font-semibold text-[#8B734C]">65K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Small Canned Beer (S)</span>
+                                    <span class="font-semibold text-[#8B734C]">40K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Drinks --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Drinks</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Hot/Cold Coffee/Tea</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Hot Spiced Coffee/Tea</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Mocktail</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">ABC Mocca or Fresco</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Gooday, Hot/Cold Milo</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Hot/Cold White/Chocolate Milk</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Coffee Milk</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Hot Chocolate</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Hot Ovaltine</span>
+                                    <span class="font-semibold text-[#8B734C]">15K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Sprite, Fanta, Coca-Cola</span>
+                                    <span class="font-semibold text-[#8B734C]">10K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Fresh Fruit Smoothie</span>
+                                    <span class="font-semibold text-[#8B734C]">5K-10K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Card 4: Beverages - Snacks, Juice --}}
+                <div class="bg-white rounded-2xl shadow-lg p-8 lg:p-10 animate-on-scroll-delay-4">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-12 h-12 bg-[#8B734C] rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">Beverages</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        {{-- Snacks --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Snacks</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Banana Pan Cake</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">White Bread + Omelette</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Burger (Bread, Meat, Vegetables, Cheese)</span>
+                                    <span class="font-semibold text-[#8B734C]">30K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Burger (Bread, Meat, Vegetables, Tomato)</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Burger (Bread, 2 Meat, Vegetables, Cheese)</span>
+                                    <span class="font-semibold text-[#8B734C]">45K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Burger (Bread, 3 Meats, Vegetables, Cheese)</span>
+                                    <span class="font-semibold text-[#8B734C]">50K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Viera Rainbow Salad</span>
+                                    <span class="font-semibold text-[#8B734C]">24K</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Juice --}}
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#8B734C] mb-4 border-b border-[#E8E6E0] pb-2">Juice</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Mango</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Avocado</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Cucumber</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Pineapple</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Soursop</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Dragon Fruit</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Papaya</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Orange/Lemon</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Red/White Melon</span>
+                                    <span class="font-semibold text-[#8B734C]">25K</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-[#F5F5F3]">
+                                    <span class="text-[#1B1B18]">Original Fruit Smoothie</span>
+                                    <span class="font-semibold text-[#8B734C]">50K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-[#706F6C] italic">
+                    Enjoy your food and drinks. Thank you and blessings.
+                </p>
             </div>
         </div>
     </section>
