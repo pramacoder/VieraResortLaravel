@@ -27,6 +27,9 @@
 </head>
 <body class="antialiased bg-[#FDFBF7] text-[#1B1B18]">
     @yield('content')
+    
+    {{-- Footer Component --}}
+    <x-footer />
 </body>
 </html>
 

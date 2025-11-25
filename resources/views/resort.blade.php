@@ -191,124 +191,97 @@
     {{-- Room Rates Section --}}
     <section class="bg-[#8B734C] py-20 lg:py-32">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="max-w-6xl mx-auto">
+            <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16 animate-on-scroll">
                     <h2 class="text-4xl lg:text-6xl font-serif font-bold text-white mb-4" style="font-family: 'Cormorant Garamond', serif;">
                         Room rates
                     </h2>
                     <p class="text-lg text-white/90 max-w-2xl mx-auto">
-                        Choose what fits your stay
+                        Fasilitas yang didapat
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {{-- Standard Room --}}
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 animate-on-scroll-delay-1 transform hover:scale-105 transition-transform">
-                        <div class="text-sm text-white/70 mb-2">Per night</div>
-                        <div class="text-5xl font-bold text-white mb-6">$85</div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">Standard room</h3>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Comfortable bed
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Private bathroom
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Ceiling fan
-                            </li>
-                        </ul>
-                        <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
-                            Book now
-                        </a>
+                {{-- Single Room Card --}}
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 animate-on-scroll-delay-1 transform hover:scale-105 transition-transform">
+                    <div class="text-center mb-8">
+                        <div class="text-sm text-white/70 mb-2">Per malam</div>
+                        <div class="text-5xl lg:text-6xl font-bold text-white mb-6">IDR. 200.000</div>
+                        <h3 class="text-2xl lg:text-3xl font-semibold text-white mb-2">Beachfront room</h3>
                     </div>
-
-                    {{-- Deluxe Room --}}
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 animate-on-scroll-delay-2 transform hover:scale-105 transition-transform">
-                        <div class="text-sm text-white/70 mb-2">Per night</div>
-                        <div class="text-5xl font-bold text-white mb-6">$125</div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">Deluxe room</h3>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Ocean view
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Air conditioning
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Work desk
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Minibar
-                            </li>
-                        </ul>
-                        <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
-                            Book now
-                        </a>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-white mb-6 text-center">Facilities included:</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>1 room for 2 people</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Toiletries</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Welcome Drink</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Breakfast</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Umbrella house</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Swimming pool</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Rooftop</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>WiFi access</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Jacuzzi</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Cleaning services and others</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
-                    {{-- Suite --}}
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 animate-on-scroll-delay-3 transform hover:scale-105 transition-transform">
-                        <div class="text-sm text-white/70 mb-2">Per night</div>
-                        <div class="text-5xl font-bold text-white mb-6">$185</div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">Suite</h3>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Separate living area
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Premium bedding
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Balcony access
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Concierge service
-                            </li>
-                            <li class="flex items-center gap-3 text-white/90">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Spa amenities
-                            </li>
-                        </ul>
-                        <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
-                            Book now
-                        </a>
-                    </div>
+                    
+                    <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
+                        Book now
+                    </a>
                 </div>
             </div>
         </div>
@@ -434,70 +407,5 @@
             </div>
         </div>
     </section>
-
-    {{-- Footer --}}
-    <footer class="bg-[#8B734C] text-white py-12 lg:py-16">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
-                <div class="lg:col-span-1">
-                    <div class="text-2xl font-serif font-semibold mb-4" style="font-family: 'Cormorant Garamond', serif;">Logo</div>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Explore more</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/resort" class="hover:opacity-80 transition-opacity">Our resort</a></li>
-                        <li><a href="/cafe" class="hover:opacity-80 transition-opacity">Dining options</a></li>
-                        <li><a href="/booking" class="hover:opacity-80 transition-opacity">Make booking</a></li>
-                        <li><a href="/booking#contact" class="hover:opacity-80 transition-opacity">Contact us</a></li>
-                        <li><a href="#" class="hover:opacity-80 transition-opacity">Plan ahead</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Get started</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/booking" class="hover:opacity-80 transition-opacity">Book now</a></li>
-                        <li><a href="/resort" class="hover:opacity-80 transition-opacity">View rooms</a></li>
-                        <li><a href="/cafe" class="hover:opacity-80 transition-opacity">See menu</a></li>
-                        <li><a href="/booking" class="hover:opacity-80 transition-opacity">Reserve today</a></li>
-                        <li><a href="#" class="hover:opacity-80 transition-opacity">Learn more</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Connect</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:opacity-80 transition-opacity">WhatsApp us</a></li>
-                        <li><a href="mailto:info@vieraresort.com" class="hover:opacity-80 transition-opacity">Email us</a></li>
-                        <li><a href="#" class="hover:opacity-80 transition-opacity">Visit us</a></li>
-                        <li><a href="tel:+6281234567890" class="hover:opacity-80 transition-opacity">Call us now</a></li>
-                        <li><a href="#" class="hover:opacity-80 transition-opacity">Find us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Updates</h4>
-                    <p class="text-sm mb-4 text-white/90">
-                        Get news about new rooms, dining experiences, and special offers delivered straight to your inbox.
-                    </p>
-                    <form class="flex flex-col gap-2" id="newsletter-form">
-                        <input type="email" placeholder="your@email.com" required class="px-4 py-2 rounded-lg bg-white text-[#1B1B18] placeholder-[#706F6C] focus:outline-none focus:ring-2 focus:ring-white/50">
-                        <button type="submit" class="px-4 py-2 bg-[#FDFBF7] text-[#8B734C] rounded-lg font-semibold hover:bg-white transition-colors">
-                            Join
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="border-t border-[#7A6340] pt-8 mt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="flex flex-wrap gap-4 text-sm">
-                        <a href="#" class="hover:opacity-80 transition-opacity">Privacy Policy</a>
-                        <a href="#" class="hover:opacity-80 transition-opacity">Terms of Service</a>
-                        <a href="#" class="hover:opacity-80 transition-opacity">Cookies Settings</a>
-                    </div>
-                    <div class="text-center text-sm text-white/80">
-                        © 2025 Viera Resort Ngurbloat
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 @endsection
 
