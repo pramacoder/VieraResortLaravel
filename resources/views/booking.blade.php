@@ -296,9 +296,9 @@
                     <p class="text-[#706F6C] mb-3 text-sm">
                         Visit us or find directions to our resort office
                     </p>
-                    <p class="text-[#8B734C] underline">
+                    <a href="https://www.google.com/maps/place/VieraResort/@-5.6683192,132.6339336,15z/data=!4m6!3m5!1s0x2d300500091e7ce3:0x7dd44b1682f7da09!8m2!3d-5.6683192!4d132.6339336!16s%2Fg%2F11c48_2jpw?entry=ttu&g_ep=EgoyMDI1MTEyMi4wIKXMDSoASAFQAw%3D%3D" class="text-[#8B734C] underline">
                         Ngurbloat, Bali, Indonesia
-                    </p>
+                    </a>
                 </div>
             </div>
         </div>
