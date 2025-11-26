@@ -2,39 +2,7 @@
 
 @section('content')
     {{-- Navigation --}}
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#FDFBF7]/95 backdrop-blur-sm border-b border-[#E8E6E0] transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex items-center justify-between h-16 lg:h-20">
-                <a href="/" class="text-2xl font-serif font-semibold text-[#1B1B18] transition-opacity hover:opacity-80" style="font-family: 'Cormorant Garamond', serif;">
-                    Logo
-                </a>
-                <div class="hidden lg:flex items-center gap-8">
-                    <a href="/" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Home</a>
-                    <a href="/resort" class="text-sm font-medium text-[#8B734C] transition-colors font-semibold">Resort</a>
-                    <a href="/cafe" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Cafe & Resto</a>
-                    <a href="/booking" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Book</a>
-                    <a href="/booking" class="px-6 py-2.5 bg-[#8B734C] text-white rounded-lg font-medium hover:bg-[#7A6340] transition-all transform hover:scale-105">
-                        Reserve
-                    </a>
-                </div>
-                <button class="lg:hidden text-[#1B1B18]" id="mobile-menu-btn">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        {{-- Mobile Menu --}}
-        <div class="lg:hidden hidden bg-[#FDFBF7] border-t border-[#E8E6E0]" id="mobile-menu">
-            <div class="container mx-auto px-4 py-4 space-y-3">
-                <a href="/" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Home</a>
-                <a href="/resort" class="block text-sm font-medium text-[#8B734C] font-semibold">Resort</a>
-                <a href="/cafe" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Cafe & Resto</a>
-                <a href="/booking" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Book</a>
-                <a href="/booking" class="block px-6 py-2.5 bg-[#8B734C] text-white rounded-lg font-medium text-center">Reserve</a>
-            </div>
-        </div>
-    </nav>
+    <x-navbar />
 
     {{-- Hero Section --}}
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -289,62 +257,6 @@
 
     {{-- Our Spaces Gallery --}}
     <section class="bg-[#FDFBF7] py-20 lg:py-32">
-        <style>
-            .resort-gallery-item {
-                position: relative;
-                width: 300px;
-                height: 300px;
-                overflow: hidden;
-                flex-shrink: 0;
-            }
-            .resort-gallery-img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-            }
-            .resort-gallery-container {
-                position: relative;
-            }
-            .resort-gallery-grid {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 1.5rem;
-                flex-wrap: wrap;
-            }
-            #resort-gallery-prev,
-            #resort-gallery-next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 20;
-            }
-            #resort-gallery-prev {
-                left: 1rem;
-            }
-            #resort-gallery-next {
-                right: 1rem;
-            }
-            @media (max-width: 768px) {
-                .resort-gallery-item {
-                    width: 150px;
-                    height: 150px;
-                }
-                #resort-gallery-prev {
-                    left: 0.5rem;
-                }
-                #resort-gallery-next {
-                    right: 0.5rem;
-                }
-            }
-            @media (min-width: 1024px) {
-                .resort-gallery-item {
-                    width: 300px;
-                    height: 300px;
-                }
-            }
-        </style>
         <div class="container mx-auto px-4 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 animate-on-scroll">
@@ -357,29 +269,29 @@
                 </div>
 
                 {{-- Gallery Carousel --}}
-                <div class="resort-gallery-container relative">
+                <div class="relative">
                     {{-- Carousel Container --}}
-                    <div class="relative overflow-hidden rounded-2xl max-w-7xl mx-auto">
+                    <div class="relative overflow-hidden rounded-2xl">
                         <div class="flex transition-transform duration-500 ease-in-out" id="resort-gallery-carousel" style="transform: translateX(0%);">
                             {{-- Slide 1 --}}
                             <div class="min-w-full flex-shrink-0">
-                                <div class="resort-gallery-grid">
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211730.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211730.png') }}" alt="Resort Space 1" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211738.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211738.png') }}" alt="Resort Space 2" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211747.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211747.png') }}" alt="Resort Space 3" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -387,23 +299,23 @@
 
                             {{-- Slide 2 --}}
                             <div class="min-w-full flex-shrink-0">
-                                <div class="resort-gallery-grid">
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211753.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211753.png') }}" alt="Resort Space 4" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211758.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211758.png') }}" alt="Resort Space 5" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211804.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211804.png') }}" alt="Resort Space 6" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -411,17 +323,23 @@
 
                             {{-- Slide 3 --}}
                             <div class="min-w-full flex-shrink-0">
-                                <div class="resort-gallery-grid">
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211817.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211817.png') }}" alt="Resort Space 7" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="resort-gallery-item group rounded-xl">
-                                        <a href="{{ asset('Screenshot 2025-11-25 211823.png') }}" class="block w-full h-full" target="_blank">
-                                            <img src="{{ asset('Screenshot 2025-11-25 211823.png') }}" alt="Resort Space 8" class="resort-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                        </a>
+                                    </div>
+                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
+                                        <a href="#" class="block w-full h-full">
+                                            <img src="#" alt="Resort Space 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
                                 </div>
@@ -429,12 +347,12 @@
                         </div>
 
                         {{-- Navigation Arrows --}}
-                        <button id="resort-gallery-prev" class="w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+                        <button id="resort-gallery-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 z-10">
                             <svg class="w-6 h-6 text-[#1B1B18]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
                         </button>
-                        <button id="resort-gallery-next" class="w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+                        <button id="resort-gallery-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 z-10">
                             <svg class="w-6 h-6 text-[#1B1B18]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
