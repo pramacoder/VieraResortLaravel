@@ -4,7 +4,7 @@
             {{-- Logo --}}
             <div class="lg:col-span-1">
                 <a href="/" class="inline-block">
-                    <h3 class="text-2xl font-serif font-bold mb-4 hover:opacity-80 transition-opacity">Logo</h3>
+                    <img src="{{ asset('Logo.png') }}" alt="logo" class="h-10 lg:h-16 w-auto object-contain">
                 </a>
             </div>
 

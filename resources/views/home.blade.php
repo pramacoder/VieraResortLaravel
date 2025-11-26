@@ -86,7 +86,7 @@
                             <p class="text-sm opacity-90">Each room is designed for your maximum comfort</p>
                         </div>
                     </div>
-                    <a href="#rooms" class="text-[#8B734C] font-medium hover:text-[#7A6340] transition-colors flex items-center gap-2 group-hover:gap-4 transition-all">
+                    <a href="/resort" class="text-[#8B734C] font-medium hover:text-[#7A6340] transition-colors flex items-center gap-2 group-hover:gap-4 transition-all">
                         Read more
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -105,7 +105,7 @@
                             <p class="text-sm opacity-90">Enjoy direct access to the pristine Ngurbloat beach</p>
                         </div>
                     </div>
-                    <a href="#beach" class="text-[#8B734C] font-medium hover:text-[#7A6340] transition-colors flex items-center gap-2 group-hover:gap-4 transition-all">
+                    <a href="/resort" class="text-[#8B734C] font-medium hover:text-[#7A6340] transition-colors flex items-center gap-2 group-hover:gap-4 transition-all">
                         Read more
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

@@ -896,10 +896,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12 animate-on-scroll">
                     <h2 class="text-4xl lg:text-6xl font-serif font-bold text-[#1B1B18] mb-4" style="font-family: 'Cormorant Garamond', serif;">
-                        Our gallery
+                        Our Menu Gallery
                     </h2>
                     <p class="text-lg text-[#706F6C] max-w-2xl mx-auto">
-                        See the place where good food and ocean views become one memory
+                        Discover our delicious dishes and culinary creations
                     </p>
                 </div>
 
@@ -1029,5 +1029,293 @@
             </div>
         </div>
     </section>
+
+    {{-- Resto Gallery Section --}}
+    <section class="bg-[#8B734C] py-20 lg:py-32">
+        <style>
+            .resto-gallery-item {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+            .resto-gallery-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .resto-gallery-container {
+                position: relative;
+            }
+            .resto-gallery-grid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+            #resto-gallery-prev,
+            #resto-gallery-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 20;
+            }
+            #resto-gallery-prev {
+                left: 1rem;
+            }
+            #resto-gallery-next {
+                right: 1rem;
+            }
+            @media (max-width: 768px) {
+                .resto-gallery-item {
+                    width: 150px;
+                    height: 150px;
+                }
+                #resto-gallery-prev {
+                    left: 0.5rem;
+                }
+                #resto-gallery-next {
+                    right: 0.5rem;
+                }
+            }
+            @media (min-width: 1024px) {
+                .resto-gallery-item {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        </style>
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="text-4xl lg:text-6xl font-serif font-bold text-white mb-4" style="font-family: 'Cormorant Garamond', serif;">
+                        Our Restaurant Gallery
+                    </h2>
+                    <p class="text-lg text-white/90 max-w-2xl mx-auto">
+                        See the place where good food and ocean views become one memory
+                    </p>
+                </div>
+
+                {{-- Gallery Carousel --}}
+                <div class="resto-gallery-container relative">
+                    {{-- Carousel Container --}}
+                    <div class="relative overflow-hidden rounded-2xl max-w-7xl mx-auto">
+                        <div class="flex transition-transform duration-500 ease-in-out" id="resto-gallery-carousel" style="transform: translateX(0%);">
+                            {{-- Slide 1 --}}
+                            <div class="min-w-full flex-shrink-0">
+                                <div class="resto-gallery-grid">
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe1.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe1.jpg') }}" alt="Restaurant View 1" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe2.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe2.jpg') }}" alt="Restaurant View 2" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe3.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe3.jpg') }}" alt="Restaurant View 3" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Slide 2 --}}
+                            <div class="min-w-full flex-shrink-0">
+                                <div class="resto-gallery-grid">
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe4.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe4.jpg') }}" alt="Restaurant View 4" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe5.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe5.jpg') }}" alt="Restaurant View 5" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe6.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe6.jpg') }}" alt="Restaurant View 6" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Slide 3 --}}
+                            <div class="min-w-full flex-shrink-0">
+                                <div class="resto-gallery-grid">
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe7.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe7.jpg') }}" alt="Restaurant View 7" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                    <div class="resto-gallery-item group rounded-xl">
+                                        <a href="{{ asset('Resto/cafe8.jpg') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Resto/cafe8.jpg') }}" alt="Restaurant View 8" class="resto-gallery-img group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Navigation Arrows --}}
+                        <button id="resto-gallery-prev" class="w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+                            <svg class="w-6 h-6 text-[#1B1B18]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button id="resto-gallery-next" class="w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+                            <svg class="w-6 h-6 text-[#1B1B18]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    {{-- Pagination Dots --}}
+                    <div class="flex justify-center gap-2 mt-8">
+                        <button class="resto-gallery-dot w-2.5 h-2.5 rounded-full bg-white transition-all active" data-index="0"></button>
+                        <button class="resto-gallery-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/70 transition-all" data-index="1"></button>
+                        <button class="resto-gallery-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white/70 transition-all" data-index="2"></button>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="/booking" class="inline-block px-8 py-3.5 bg-white text-[#8B734C] rounded-lg font-semibold hover:bg-[#FDFBF7] transition-all transform hover:scale-105">
+                        Visit Our Restaurant
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Separator Section --}}
+    <section class="bg-[#FDFBF7] py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="w-24 h-px bg-[#8B734C] mx-auto mb-8"></div>
+                <p class="text-lg text-[#706F6C] italic">
+                    "Where culinary excellence meets breathtaking ocean views"
+                </p>
+                <div class="w-24 h-px bg-[#8B734C] mx-auto mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cafe Gallery functionality (existing)
+            let cafeCurrentSlide = 0;
+            const cafeTotalSlides = 4;
+            const cafeCarousel = document.getElementById('cafe-gallery-carousel');
+            const cafeDots = document.querySelectorAll('.cafe-gallery-dot');
+            const cafePrevBtn = document.getElementById('cafe-gallery-prev');
+            const cafeNextBtn = document.getElementById('cafe-gallery-next');
+
+            function updateCafeCarousel() {
+                const translateX = -cafeCurrentSlide * 100;
+                cafeCarousel.style.transform = `translateX(${translateX}%)`;
+                
+                // Update dots
+                cafeDots.forEach((dot, index) => {
+                    if (index === cafeCurrentSlide) {
+                        dot.classList.add('active');
+                        dot.classList.remove('bg-gray-300', 'hover:bg-gray-400');
+                        dot.classList.add('bg-[#8B734C]');
+                    } else {
+                        dot.classList.remove('active', 'bg-[#8B734C]');
+                        dot.classList.add('bg-gray-300', 'hover:bg-gray-400');
+                    }
+                });
+            }
+
+            // Cafe Previous button
+            if (cafePrevBtn) {
+                cafePrevBtn.addEventListener('click', function() {
+                    cafeCurrentSlide = cafeCurrentSlide > 0 ? cafeCurrentSlide - 1 : cafeTotalSlides - 1;
+                    updateCafeCarousel();
+                });
+            }
+
+            // Cafe Next button
+            if (cafeNextBtn) {
+                cafeNextBtn.addEventListener('click', function() {
+                    cafeCurrentSlide = cafeCurrentSlide < cafeTotalSlides - 1 ? cafeCurrentSlide + 1 : 0;
+                    updateCafeCarousel();
+                });
+            }
+
+            // Cafe Dot navigation
+            cafeDots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    cafeCurrentSlide = index;
+                    updateCafeCarousel();
+                });
+            });
+
+
+            // Resto Gallery functionality (new)
+            let restoCurrentSlide = 0;
+            const restoTotalSlides = 3;
+            const restoCarousel = document.getElementById('resto-gallery-carousel');
+            const restoDots = document.querySelectorAll('.resto-gallery-dot');
+            const restoPrevBtn = document.getElementById('resto-gallery-prev');
+            const restoNextBtn = document.getElementById('resto-gallery-next');
+
+            function updateRestoCarousel() {
+                const translateX = -restoCurrentSlide * 100;
+                restoCarousel.style.transform = `translateX(${translateX}%)`;
+                
+                // Update dots
+                restoDots.forEach((dot, index) => {
+                    if (index === restoCurrentSlide) {
+                        dot.classList.add('active');
+                        dot.classList.remove('bg-white/50', 'hover:bg-white/70');
+                        dot.classList.add('bg-white');
+                    } else {
+                        dot.classList.remove('active', 'bg-white');
+                        dot.classList.add('bg-white/50', 'hover:bg-white/70');
+                    }
+                });
+            }
+
+            // Resto Previous button
+            if (restoPrevBtn) {
+                restoPrevBtn.addEventListener('click', function() {
+                    restoCurrentSlide = restoCurrentSlide > 0 ? restoCurrentSlide - 1 : restoTotalSlides - 1;
+                    updateRestoCarousel();
+                });
+            }
+
+            // Resto Next button
+            if (restoNextBtn) {
+                restoNextBtn.addEventListener('click', function() {
+                    restoCurrentSlide = restoCurrentSlide < restoTotalSlides - 1 ? restoCurrentSlide + 1 : 0;
+                    updateRestoCarousel();
+                });
+            }
+
+            // Resto Dot navigation
+            restoDots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    restoCurrentSlide = index;
+                    updateRestoCarousel();
+                });
+            });
+
+        });
+    </script>
 @endsection
 
