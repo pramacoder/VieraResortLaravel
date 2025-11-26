@@ -2,39 +2,7 @@
 
 @section('content')
     {{-- Navigation --}}
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#FDFBF7]/95 backdrop-blur-sm border-b border-[#E8E6E0] transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex items-center justify-between h-16 lg:h-20">
-                <a href="/" class="text-2xl font-serif font-semibold text-[#1B1B18] transition-opacity hover:opacity-80" style="font-family: 'Cormorant Garamond', serif;">
-                    Logo
-                </a>
-                <div class="hidden lg:flex items-center gap-8">
-                    <a href="/" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Home</a>
-                    <a href="/resort" class="text-sm font-medium text-[#8B734C] transition-colors font-semibold">Resort</a>
-                    <a href="/cafe" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Cafe & Resto</a>
-                    <a href="/booking" class="text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Book</a>
-                    <a href="/booking" class="px-6 py-2.5 bg-[#8B734C] text-white rounded-lg font-medium hover:bg-[#7A6340] transition-all transform hover:scale-105">
-                        Reserve
-                    </a>
-                </div>
-                <button class="lg:hidden text-[#1B1B18]" id="mobile-menu-btn">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        {{-- Mobile Menu --}}
-        <div class="lg:hidden hidden bg-[#FDFBF7] border-t border-[#E8E6E0]" id="mobile-menu">
-            <div class="container mx-auto px-4 py-4 space-y-3">
-                <a href="/" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Home</a>
-                <a href="/resort" class="block text-sm font-medium text-[#8B734C] font-semibold">Resort</a>
-                <a href="/cafe" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Cafe & Resto</a>
-                <a href="/booking" class="block text-sm font-medium text-[#1B1B18] hover:text-[#8B734C] transition-colors">Book</a>
-                <a href="/booking" class="block px-6 py-2.5 bg-[#8B734C] text-white rounded-lg font-medium text-center">Reserve</a>
-            </div>
-        </div>
-    </nav>
+    <x-navbar />
 
     {{-- Hero Section --}}
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -89,10 +57,10 @@
                     
                     {{-- Buttons --}}
                     <div class="flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start">
-                        <a href="#rooms" class="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 border border-[#1B1B18] bg-white text-[#1B1B18] rounded-lg font-semibold hover:bg-[#1B1B18] hover:text-white transition-all text-center">
+                        <a href="#spaces" class="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 border border-[#1B1B18] bg-white text-[#1B1B18] rounded-lg font-semibold hover:bg-[#1B1B18] hover:text-white transition-all text-center">
                             Explore
                         </a>
-                        <a href="#rooms" class="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-[#1B1B18] font-semibold hover:text-[#8B734C] transition-colors flex items-center justify-center lg:justify-start gap-2 group">
+                        <a href="#packages" class="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-[#1B1B18] font-semibold hover:text-[#8B734C] transition-colors flex items-center justify-center lg:justify-start gap-2 group">
                             Learn
                             <svg class="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -133,12 +101,6 @@
                             <p class="text-sm lg:text-base mb-4 opacity-90">
                                 Sand beneath your feet and the sound of the sea
                             </p>
-                            <a href="#beach" class="inline-flex items-center gap-2 text-sm font-semibold hover:gap-4 transition-all">
-                                Explore
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
 
@@ -154,12 +116,6 @@
                             <p class="text-sm lg:text-base mb-4 opacity-90">
                                 Space to move, to breathe, to simply be yourself
                             </p>
-                            <a href="#recreation" class="inline-flex items-center gap-2 text-sm font-semibold hover:gap-4 transition-all">
-                                Explore
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
 
@@ -175,12 +131,6 @@
                             <p class="text-sm lg:text-base mb-4 opacity-90">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                             </p>
-                            <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold hover:gap-4 transition-all">
-                                Button
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -189,106 +139,235 @@
     </section>
 
     {{-- Room Rates Section --}}
-    <section class="bg-[#8B734C] py-20 lg:py-32">
+    <section id="packages" class="bg-[#8B734C] py-20 lg:py-32">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="max-w-4xl mx-auto">
+            <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16 animate-on-scroll">
                     <h2 class="text-4xl lg:text-6xl font-serif font-bold text-white mb-4" style="font-family: 'Cormorant Garamond', serif;">
-                        Room rates
+                        Our Packages
                     </h2>
                     <p class="text-lg text-white/90 max-w-2xl mx-auto">
-                        Fasilitas yang didapat
+                        Choose the perfect package for your stay
                     </p>
                 </div>
 
-                {{-- Single Room Card --}}
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 animate-on-scroll-delay-1 transform hover:scale-105 transition-transform">
-                    <div class="text-center mb-8">
-                        <div class="text-sm text-white/70 mb-2">Per malam</div>
-                        <div class="text-5xl lg:text-6xl font-bold text-white mb-6">IDR. 200.000</div>
-                        <h3 class="text-2xl lg:text-3xl font-semibold text-white mb-2">Beachfront room</h3>
-                    </div>
-                    
-                    <div class="mb-8">
-                        <h4 class="text-xl font-semibold text-white mb-6 text-center">Facilities included:</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <ul class="space-y-3">
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>1 room for 2 people</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Toiletries</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Welcome Drink</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Breakfast</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Umbrella house</span>
-                                </li>
-                            </ul>
-                            <ul class="space-y-3">
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Swimming pool</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Rooftop</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>WiFi access</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Jacuzzi</span>
-                                </li>
-                                <li class="flex items-center gap-3 text-white/90">
-                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Cleaning services and others</span>
-                                </li>
-                            </ul>
+                {{-- Package Cards Grid --}}
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                    {{-- Beachfront Room Package --}}
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10 animate-on-scroll-delay-1 transform hover:scale-105 transition-transform flex flex-col">
+                        <div class="text-center mb-8">
+                            <div class="text-sm text-white/70 mb-2">Per malam</div>
+                            <div class="text-4xl lg:text-5xl font-bold text-white mb-6">IDR. 1.200.000</div>
+                            <h3 class="text-2xl lg:text-2xl font-semibold text-white mb-2">Beachfront Room</h3>
+                        </div>
+                        
+                        <div class="mb-8 flex-grow">
+                            <h4 class="text-lg font-semibold text-white mb-6 text-center">Facilities included:</h4>
+                            <div class="grid grid-cols-1 gap-4">
+                                <ul class="space-y-3">
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>1 room for 2 people</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Toiletries</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Welcome Drink</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Breakfast</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Umbrella house</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Swimming pool</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Rooftop</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>WiFi access</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Jacuzzi</span>
+                                    </li>
+                                    <li class="flex items-center gap-3 text-white/90">
+                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>Cleaning services and others</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 mt-auto">
+                            <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
+                                Book now
+                            </a>
+                            <button onclick="openRulesModal('room')" class="block w-full px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-[#8B734C] transition-colors">
+                                Rules
+                            </button>
                         </div>
                     </div>
-                    
-                    <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
-                        Book now
-                    </a>
+
+                    {{-- Swimming Pool Package --}}
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10 animate-on-scroll-delay-2 transform hover:scale-105 transition-transform flex flex-col">
+                        <div class="text-center mb-8">
+                            <div class="text-sm text-white/70 mb-2">Per orang</div>
+                            <div class="text-4xl lg:text-5xl font-bold text-white mb-6">IDR. 250.000</div>
+                            <h3 class="text-2xl lg:text-2xl font-semibold text-white mb-2">Swimming Pool Package</h3>
+                            <p class="text-sm text-white/80">Open 09.00 - 18.00 Setiap hari</p>
+                        </div>
+                        
+                        <div class="mb-8 flex-grow">
+                            <h4 class="text-lg font-semibold text-white mb-6 text-center">Package includes:</h4>
+                            <div class="grid grid-cols-1 gap-6">
+                                                            {{-- Additional Items --}}
+                                                            <div>
+                                                                <ul class="space-y-2">
+                                                                    <li class="flex items-center gap-3 text-white/90">
+                                                                        <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                                        </svg>
+                                                                        <span>Handuk</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                {{-- Snack Options --}}
+                                <div>
+                                    <h5 class="text-base font-semibold text-white mb-3">Snack Options:</h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Pisang Enbal</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Roti Bakar</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Kentang Goreng</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                {{-- Drink Options --}}
+                                <div>
+                                    <h5 class="text-base font-semibold text-white mb-3">Drink Options:</h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Aqua</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Sprite</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Fanta</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 text-white/90">
+                                            <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span>Coca Cola</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 mt-auto">
+                            <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
+                                Book now
+                            </a>
+                            <button onclick="openRulesModal('pool')" class="block w-full px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-[#8B734C] transition-colors">
+                                Rules
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    {{-- Rules Modal --}}
+    <div id="rulesModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 transition-all duration-300" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl border border-gray-200 transform transition-all duration-300 scale-95 opacity-0" id="modalDialog">
+            {{-- Modal Header --}}
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <h3 id="modalTitle" class="text-2xl font-serif font-bold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
+                    Tata Tertib
+                </h3>
+                <button onclick="closeRulesModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            {{-- Modal Content --}}
+            <div class="p-6 overflow-y-auto max-h-[60vh]">
+                <div id="modalContent">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            {{-- Modal Footer --}}
+            <div class="p-6 border-t border-gray-200">
+                <button onclick="closeRulesModal()" class="w-full px-6 py-3 bg-[#8B734C] text-white rounded-lg font-semibold hover:bg-[#7A6340] transition-colors">
+                    Sudah Membaca
+                </button>
+            </div>
+        </div>
+    </div>
+
     {{-- Our Spaces Gallery --}}
-    <section class="bg-[#FDFBF7] py-20 lg:py-32">
+    <section id="spaces" class="bg-[#FDFBF7] py-20 lg:py-32">
         <style>
             .resort-gallery-item {
                 position: relative;
@@ -457,5 +536,289 @@
             </div>
         </div>
     </section>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <script>
+        // Rules content data
+        const rulesContent = {
+            room: {
+                title: 'Rules of Beachfront Room',
+                content: `
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Identitas & Pembayaran:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span><strong>Setiap tamu yang check-in WAJIB MEMPERLIHATKAN IDENTITAS DIRI</strong> dan membayar penginapan sesuai tarif</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Pemesanan:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Pemesanan dapat dilakukan secara daring dan online</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span><strong>Untuk bookingan yang ingin di-keep tanggal tertentu WAJIB DILAKUKAN PELUNASAN DIAWAL</strong> sebelum tanggal check-in</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Waktu Check-in & Check-out:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span><strong>Waktu check-in pukul 12.00 WIB</strong> dan <strong>waktu check-out 14.00 WIB</strong></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span><strong>Check-in lebih awal sebelum jam 12.00 WIB</strong> dikenakan biaya tambahan <strong>Rp. 100.000</strong></span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span><strong>Terlambat check-out di atas jam 14.00 - 18.00</strong> dikenakan tambahan biaya <strong>Rp. 300.000</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            pool: {
+                title: 'Rules of Swimming Pool Package',
+                content: `
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Kenyamanan:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Gunakan pakaian renang yang layak sesuai aturan yang berlaku</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Hindari berbuat gaduh atau mendorong orang lain di tepi kolam</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Patuhilah aturan kolam renang yang spesifik seperti larangan membawa barang tertentu</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Jaga barang berharga dengan menyimpannya di loker jika tersedia</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Jangan berenang saat gelap jika pencahayaan terbatas, karena pandangan akan terbatas</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Etika dan Kebersihan:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Mandi dan membilas tubuh sebelum masuk kolam untuk menjaga kebersihan air</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Mengenakan pakaian renang yang sesuai</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Gunakan toilet untuk buang air, jangan melakukannya di dalam kolam renang</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Tidak makan, minum, dan merokok di area pinggir kolam</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Buang sampah pada tempatnya</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Keselamatan:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Lakukan pemanasan sebelum berenang untuk menghindari cedera seperti kram</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Tidak berlari di sekitar area kolam renang yang bisa menyebabkan terpleset atau jatuh</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#1B1B18] mb-3">Umum:</h4>
+                            <ul class="space-y-2 text-[#706F6C]">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Awasi anak-anak saat berenang dan pastikan mereka didampingi oleh orang dewasa</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Jangan berenang saat sakit terutama penyakit menular untuk mencegah penyebaran</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Hindari berenang saat hujan deras atau ada kilat</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Periksa area sekitar sebelum melompat ke dalam kolam untuk memastikan tidak ada orang atau benda lain di bawah</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-[#8B734C] mt-1">•</span>
+                                    <span>Perhatikan kedalaman kolam dan pilih area yang sesuai dengan kemampuan berenang Anda, terutama bagi pemula</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Function to open rules modal
+        function openRulesModal(type) {
+            const modal = document.getElementById('rulesModal');
+            const modalDialog = document.getElementById('modalDialog');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+            
+            if (rulesContent[type]) {
+                modalTitle.textContent = rulesContent[type].title;
+                modalContent.innerHTML = rulesContent[type].content;
+                
+                // Show modal
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                
+                // Trigger animation
+                setTimeout(() => {
+                    modalDialog.classList.remove('scale-95', 'opacity-0');
+                    modalDialog.classList.add('scale-100', 'opacity-100');
+                }, 10);
+            }
+        }
+
+        // Function to close rules modal
+        function closeRulesModal() {
+            const modal = document.getElementById('rulesModal');
+            const modalDialog = document.getElementById('modalDialog');
+            
+            // Trigger close animation
+            modalDialog.classList.remove('scale-100', 'opacity-100');
+            modalDialog.classList.add('scale-95', 'opacity-0');
+            
+            // Hide modal after animation
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('rulesModal');
+            if (modal) {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeRulesModal();
+                    }
+                });
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('rulesModal');
+                if (modal && !modal.classList.contains('hidden')) {
+                    closeRulesModal();
+                }
+            }
+        });
+
+        // Prevent modal dialog from closing when clicked
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalDialog = document.getElementById('modalDialog');
+            if (modalDialog) {
+                modalDialog.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            }
+        });
+
+        // Gallery functionality (existing code)
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentSlide = 0;
+            const totalSlides = 3;
+            const carousel = document.getElementById('resort-gallery-carousel');
+            const dots = document.querySelectorAll('.resort-gallery-dot');
+            const prevBtn = document.getElementById('resort-gallery-prev');
+            const nextBtn = document.getElementById('resort-gallery-next');
+
+            function updateCarousel() {
+                const translateX = -currentSlide * 100;
+                carousel.style.transform = `translateX(${translateX}%)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.classList.add('active');
+                        dot.classList.remove('bg-gray-300', 'hover:bg-gray-400');
+                        dot.classList.add('bg-[#8B734C]');
+                    } else {
+                        dot.classList.remove('active', 'bg-[#8B734C]');
+                        dot.classList.add('bg-gray-300', 'hover:bg-gray-400');
+                    }
+                });
+            }
+
+            // Previous button
+            prevBtn.addEventListener('click', function() {
+                currentSlide = currentSlide > 0 ? currentSlide - 1 : totalSlides - 1;
+                updateCarousel();
+            });
+
+            // Next button
+            nextBtn.addEventListener('click', function() {
+                currentSlide = currentSlide < totalSlides - 1 ? currentSlide + 1 : 0;
+                updateCarousel();
+            });
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+
+            // Auto-play (optional)
+            setInterval(function() {
+                currentSlide = currentSlide < totalSlides - 1 ? currentSlide + 1 : 0;
+                updateCarousel();
+            }, 5000);
+        });
+    </script>
 @endsection
 
