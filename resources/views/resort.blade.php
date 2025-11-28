@@ -155,80 +155,80 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
                     {{-- Beachfront Room Package --}}
                     <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10 animate-on-scroll-delay-1 transform hover:scale-105 transition-transform flex flex-col">
-                        <div class="text-center mb-8">
-                            <div class="text-sm text-white/70 mb-2">Per malam</div>
+                    <div class="text-center mb-8">
+                        <div class="text-sm text-white/70 mb-2">Per malam</div>
                             <div class="text-4xl lg:text-5xl font-bold text-white mb-6">IDR. 1.200.000</div>
                             <h3 class="text-2xl lg:text-2xl font-semibold text-white mb-2">Beachfront Room</h3>
-                        </div>
-                        
+                    </div>
+                    
                         <div class="mb-8 flex-grow">
                             <h4 class="text-lg font-semibold text-white mb-6 text-center">Facilities included:</h4>
                             <div class="grid grid-cols-1 gap-4">
-                                <ul class="space-y-3">
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>1 room for 2 people</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Toiletries</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Welcome Drink</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Breakfast</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Umbrella house</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Swimming pool</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Rooftop</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>WiFi access</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Jacuzzi</span>
-                                    </li>
-                                    <li class="flex items-center gap-3 text-white/90">
-                                        <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span>Cleaning services and others</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>1 room for 2 people</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Toiletries</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Welcome Drink</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Breakfast</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Umbrella house</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Swimming pool</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Rooftop</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>WiFi access</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Jacuzzi</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-white/90">
+                                    <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span>Cleaning services and others</span>
+                                </li>
+                            </ul>
                         </div>
-                        
+                    </div>
+                    
                         <div class="space-y-3 mt-auto">
                             <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
                                 Book now
@@ -322,9 +322,9 @@
                         </div>
                         
                         <div class="space-y-3 mt-auto">
-                            <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
-                                Book now
-                            </a>
+                    <a href="/booking" class="block w-full px-6 py-3 bg-white text-[#8B734C] rounded-lg font-semibold text-center hover:bg-[#FDFBF7] transition-colors">
+                        Book now
+                    </a>
                             <button onclick="openRulesModal('pool')" class="block w-full px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-[#8B734C] transition-colors">
                                 Rules
                             </button>
@@ -441,23 +441,23 @@
                     <div class="relative overflow-hidden rounded-2xl">
                         <div class="flex transition-transform duration-500 ease-in-out" id="resort-gallery-carousel" style="transform: translateX(0%);">
                             {{-- Slide 1 --}}
-                            <div class="min-w-full flex-shrink-0">
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="min-w-full shrink-0">
+                                <div class="flex justify-center items-center gap-3 md:gap-4 lg:gap-6 flex-wrap">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211730.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211730.png') }}" alt="Resort Space 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211738.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211738.png') }}" alt="Resort Space 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211747.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211747.png') }}" alt="Resort Space 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
@@ -465,23 +465,23 @@
                             </div>
 
                             {{-- Slide 2 --}}
-                            <div class="min-w-full flex-shrink-0">
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="min-w-full shrink-0">
+                                <div class="flex justify-center items-center gap-3 md:gap-4 lg:gap-6 flex-wrap">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211753.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211753.png') }}" alt="Resort Space 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211758.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211758.png') }}" alt="Resort Space 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211804.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211804.png') }}" alt="Resort Space 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
@@ -489,23 +489,23 @@
                             </div>
 
                             {{-- Slide 3 --}}
-                            <div class="min-w-full flex-shrink-0">
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="min-w-full shrink-0">
+                                <div class="flex justify-center items-center gap-3 md:gap-4 lg:gap-6 flex-wrap">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211817.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211817.png') }}" alt="Resort Space 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211823.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211823.png') }}" alt="Resort Space 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>
-                                    <div class="group relative overflow-hidden rounded-xl aspect-square">
-                                        <a href="#" class="block w-full h-full">
-                                            <img src="#" alt="Resort Space 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <div class="group relative overflow-hidden rounded-xl w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 shrink-0">
+                                        <a href="{{ asset('Screenshot 2025-11-25 211730.png') }}" class="block w-full h-full" target="_blank">
+                                            <img src="{{ asset('Screenshot 2025-11-25 211730.png') }}" alt="Resort Space 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </a>
                                     </div>

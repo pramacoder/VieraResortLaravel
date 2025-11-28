@@ -4,7 +4,7 @@
             {{-- Logo --}}
             <div class="shrink-0">
                 <a href="/" class="flex items-center">
-                    <img src="{{ asset('Logo Viera Group.jpeg') }}" alt="logo" class="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-cover">
+                    <img src="{{ asset('Logo Viera Group.svg') }}" alt="logo" class="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-cover">
                 </a>
             </div>
 

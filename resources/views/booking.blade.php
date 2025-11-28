@@ -28,9 +28,12 @@
                     
                     {{-- WhatsApp Section --}}
                     <div class="mb-8">
-                        <h3 class="text-2xl sm:text-3xl font-serif font-semibold text-[#1B1B18] mb-4" style="font-family: 'Cormorant Garamond', serif;">
-                            Message us on WhatsApp
-                        </h3>
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="{{ asset('whatsapp_web.png') }}" alt="WhatsApp" class="w-10 h-10 shrink-0 object-contain block">
+                            <h3 class="text-2xl sm:text-3xl font-serif font-semibold text-[#1B1B18]" style="font-family: 'Cormorant Garamond', serif;">
+                                Message us on WhatsApp
+                            </h3>
+                        </div>
                         <p class="text-base sm:text-lg text-[#706F6C] mb-6 max-w-2xl mx-auto lg:mx-0">
                             Connect instantly with our team to secure your reservation and answer any questions
                         </p>

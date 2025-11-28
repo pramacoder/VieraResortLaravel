@@ -3,8 +3,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
             {{-- Logo --}}
             <div class="lg:col-span-1">
-                <a href="/" class="inline-block">
-                    <img src="{{ asset('Logo.png') }}" alt="logo" class="h-10 lg:h-16 w-auto object-contain">
+                <a href="/" class="flex items-center">
+                    <img src="{{ asset('Logo Viera Group.svg') }}" alt="logo" class="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-cover">
                 </a>
             </div>
 
