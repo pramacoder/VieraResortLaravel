@@ -234,7 +234,7 @@
                     <p class="text-[#706F6C] mb-3 text-sm">
                         Send us your inquiry and we'll respond promptly
                     </p>
-                    <a href="karmina.savsav@gmail.com" class="text-[#8B734C] underline hover:text-[#7A6340] transition-colors">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=karmina.savsav@gmail.com" class="text-[#8B734C] underline hover:text-[#7A6340] transition-colors">
                         karmina.savsav@gmail.com
                     </a>
                 </div>
